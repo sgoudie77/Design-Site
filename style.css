@@ -1,0 +1,261 @@
+/* Global Styles Start Here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background: #fff;
+    color: #000;
+}
+
+:root {
+    /* font sizes */
+    --fs-h1: 4rem;
+    --fs-h2: 3rem;
+    --fs-h3: 2.5rem;
+    --fs-h4: 2rem;
+    --fs-h5: 1.5rem;
+    --fs-p: 1rem;
+    /* colors */
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-blue: #43BCDE;
+    --clr-light-blue: #E0F8FF;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-color: #000000;
+}
+/* Global Styles End Here */
+
+/* Header and Navbar Styles Start Here */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+/* Header and Navbar Styles End Here */
+
+/* Hero Styles Start Here */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+#particles-js {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background: radial-gradient(#0c3249, #04181f);
+}
+.hero-content {
+    /* position: absolute;
+    top: 40%;
+    left: 5%; */
+    height: 0%;
+    /* width: 100%; */
+    transform: translate(5vw, 25vh);
+    color: white;
+    z-index: 99;
+}
+.hero-content h1 {
+    font-size: var(--fs-h1);
+    font-weight: 100;
+    margin-bottom: 3rem;
+}
+.hero-content h1 span {
+    color: var(--clr-blue);
+}
+.hero-content h2 {
+    font-size: var(--fs-h2);
+    font-weight: 100;
+}
+#hero-btns {
+    position: relative;
+    display: flex;
+}
+#hero-btns a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: var(--clr-white);
+    border: 1px solid var(--clr-blue);
+    font-size: var(--fs-h4);
+    padding: 0 2rem .15rem 2rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+#hero-btns a:hover {
+    background-color: var(--clr-blue);
+    transition: 0.3s ease;
+}
+/* Hero Styles End Here */
+
+/* Services Styles Start Here */
+#services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+#services h2 {
+    font-size: var(--fs-h2);
+    color: var(--clr-blue);
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+} 
+#service-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.service-item {
+    border: 2px solid var(--clr-white);
+    width: 30%;
+    margin: 0 1.5rem; 
+    border-radius: 2px; 
+}
+.service-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+.service-item-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-blue);
+}
+.service-item-title i {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.service-item h3 {
+    color: var(--clr-white);
+    text-align: center;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    letter-spacing: 1px;
+}
+.service-info {
+    background-color: var(--clr-light-blue);
+    font-size: var(--fs-p);
+    letter-spacing: 1px;
+    color: var(--clr-black);
+    padding: .7rem;
+}
+
+.test {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.service-item-title-test {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43BCDEa0;
+}
+.service-item-title-test i {
+    color: var(--clr-white);
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+/* Services Styles End Here */
+
+/* Process Styles Start Here */
+/* Process Styles End Here */
+
+/* About Styles Start Here */
+#about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    border: 1px solid blue;
+}
+/* About Styles End Here */
+
+/* Portfolio Styles Start Here */
+/* Portfolio Styles End Here */
+
+/* Testimonial Styles Start Here */
+/* Testimonial Styles End Here */
+
+/* Contact Styles Start Here */
+/* Contact Styles End Here */
+
+/* Footer Styles Start Here */
+/* Footer Styles End Here */
+
+/* Responsive Styles Start Here */
+@media (max-width: 1199px) {
+    
+}
+@media (max-width: 991px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 512px) {
+
+}
+/* Responsive Styles End Here */
